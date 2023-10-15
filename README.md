@@ -1,30 +1,60 @@
-# Project Name
+# Java MMORPG Game Development
 
-Welcome to MMORPG-Server on GitHub! This is a Java-based MMORPG game development project with a unique twist, quest monster events, and much more.
+Welcome to the Java MMORPG Game Development project! This repository is dedicated to creating a massive multiplayer online role-playing game (MMORPG) using Java. Join us in building an immersive gaming world and bringing your creative ideas to life.
 
-## Introduction
+## Table of Contents
 
-Our game project is a 2D side-scrolling MMORPG that offers an immersive and distinctive gaming experience. It combines classic MMORPG elements with the excitement of side-scrolling gameplay.
+- [About](#about)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Contributing](#contributing)
+- [License](#license)
 
-**Key Features**:
-- Unique 2D Side-Scrolling Gameplay: Explore a rich and vibrant 2D world with classic MMORPG elements from a side-scrolling perspective.
-- Quest Monster Events: Engage in dynamic in-game events that require teamwork to overcome formidable foes and earn valuable rewards.
-- Growing Community: Our game is designed for MMORPG enthusiasts of all ages, and we aim to build a strong and diverse player community.
+## About
 
-## Project Goals
+Introduce your Java-based MMORPG game project in a few sentences. Describe the game's concept, what makes it unique, and your target audience. Provide an overview of your project's goals and objectives.
 
-Our primary goal is to create an engaging and immersive MMORPG experience for players. Here are our project objectives:
+## Getting Started
 
-- Continual Development: We are committed to ongoing development, adding new content, features, and improvements to enhance the gaming experience.
-- Community Building: We aim to foster a vibrant player community, providing a platform for players to connect, collaborate, and enjoy the game together.
-- Quality Assurance: Maintaining a high standard of game quality is a priority, ensuring that players have a seamless and enjoyable gaming experience.
+Help others get started with your Java MMORPG game development project by providing instructions on setting up the development environment. Include details on software requirements, dependencies, and any initial configuration.
 
-## Contributing
+## Architecture
+Explain the server's architecture, including the technology stack used, communication protocols, databases, and any other relevant components. Provide an overview of the server's structure.
 
-We welcome contributions from the open-source community. Whether you're interested in bug fixes, new features, or documentation, please refer to our [Contribution Guidelines](CONTRIBUTING.md) for details on how to get involved.
+Programming Language: [Java][Java Script]
+Database System: [MySQL]
+Security Measures: not sure yet
+Server Structure:
 
-## License
 
-This project is licensed under the GPL-3.0 (LICENSE). Please review the license for usage details.
+Login Server:
 
-Join us on this exciting journey of game development, and together, let's create a Java-based MMORPG that offers a side-scrolling adventure like no other!
+Handles user authentication
+Manages account profiles
+Verifies username/password
+
+Realm/World Server:
+
+Main game world logic
+NPCs, quests, combat, etc.
+Manages in-game zones/regions
+Tracks player state
+
+Route Station:
+
+Acts as relay between clients and world servers
+Load balances connections
+Forwards messages back and forth
+
+Chat Server:
+
+Manages chat channels
+Handles chat messages
+Routes chat messages to recipients
+
+Client:
+
+Renders game UI and graphics
+Sends player actions to server
+Receives world updates from server
