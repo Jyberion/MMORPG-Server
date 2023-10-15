@@ -25,6 +25,6 @@ We welcome contributions from the open-source community. Whether you're interest
 
 ## License
 
-This project is licensed under the [License Name](LICENSE). Please review the license for usage details.
+This project is licensed under the GPL-3.0 (LICENSE). Please review the license for usage details.
 
 Join us on this exciting journey of game development, and together, let's create a Java-based MMORPG that offers a side-scrolling adventure like no other!
